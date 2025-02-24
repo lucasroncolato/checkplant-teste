@@ -9,7 +9,7 @@ Para executar o projeto localmente, siga os passos abaixo:
 ### Clone o repositório:
 ```bash
 git clone https://github.com/lucasroncolato/checkplant-teste.git
-cd checkplant
+cd checkplant-teste
 ```
 
 ### Instale as dependências:
