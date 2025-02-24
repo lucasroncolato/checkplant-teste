@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Checkplant - Teste ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém a implementação do teste solicitado pela Checkplant 🌱, onde foi desenvolvida uma aplicação front-end para gerenciar pontos de coleta de informações em uma área georreferenciada. A aplicação foi construída utilizando React e Leaflet como engine de mapas.
 
-## Available Scripts
+## 🚀 Como Executar o Projeto
 
-In the project directory, you can run:
+Para executar o projeto localmente, siga os passos abaixo:
 
-### `npm start`
+### Clone o repositório:
+```bash
+git clone https://github.com/lucasroncolato/checkplant-teste.git
+cd checkplant
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Instale as dependências:
+```bash
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
+O projeto estará disponível em [http://localhost:3000](http://localhost:3000).
 
-### `npm test`
+### Para rodar os testes:
+```bash
+npm test
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Para construir o projeto para produção:
+```bash
+npm run build
+```
 
-### `npm run build`
+## 👋 Funcionalidades Implementadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A aplicação atende aos seguintes requisitos:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Adicionar pontos no mapa**: O produtor pode adicionar novos pontos de coleta clicando no mapa.
+- **Ordem de criação dos pontos**: Cada ponto exibe um número que indica a ordem em que foi criado.
+- **Data de criação dos pontos**: A data e hora de criação de cada ponto são exibidas.
+- **Mover pontos**: Os pontos podem ser arrastados para novas localizações no mapa.
+- **Remover um ponto**: Um ponto pode ser removido individualmente.
+- **Excluir todos os pontos**: Todos os pontos podem ser removidos de uma vez.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tecnologias Utilizadas
 
-### `npm run eject`
+- **React**: Framework JavaScript para construção da interface do usuário.
+- **Leaflet**: Biblioteca JavaScript para mapas interativos.
+- **Turf.js**: Biblioteca para manipulação de dados geoespaciais.
+- **Tailwind CSS**: Framework CSS para estilização.
+- **React Testing Library**: Para testes unitários e de integração.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Protótipo e Assets
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- O protótipo da aplicação pode ser visualizado [aqui](#).
+- Os assets utilizados no projeto estão disponíveis [aqui](#).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📝 GeoJSON
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O polígono que representa a área foi carregado a partir do arquivo GeoJSON fornecido, disponível [aqui](#).
 
-## Learn More
+## 📂 Estrutura do Projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+checkplant/
+├── src/
+│   ├── components/  # Contém os componentes React utilizados na aplicação.
+│   ├── pages/       # Contém as páginas da aplicação.
+│   ├── assets/      # Contém os ícones e outros recursos visuais.
+│   ├── utils/       # Contém utilitários e funções auxiliares.
+│   ├── tests/       # Contém os testes da aplicação.
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 Considerações Finais
 
-### Code Splitting
+Este projeto foi desenvolvido com o objetivo de demonstrar habilidades em desenvolvimento front-end, utilizando tecnologias modernas e boas práticas de programação. Espero que atenda às expectativas e requisitos solicitados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
